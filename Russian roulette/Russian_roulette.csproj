@@ -59,18 +59,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\RRgun.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -81,31 +82,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\gun.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\r2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bult.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\goli.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\goli1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\goli2.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bann.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\goli222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brkn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\boot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boot1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

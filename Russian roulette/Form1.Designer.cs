@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_load = new System.Windows.Forms.Button();
             this.btn_spin = new System.Windows.Forms.Button();
             this.btn_shoot = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             this.btn_spin.TabIndex = 1;
             this.btn_spin.Text = "spin";
             this.btn_spin.UseVisualStyleBackColor = false;
+            this.btn_spin.Click += new System.EventHandler(this.Btn_spin_Click);
             // 
             // btn_shoot
             // 
@@ -66,6 +68,7 @@
             this.btn_shoot.TabIndex = 2;
             this.btn_shoot.Text = "shoot";
             this.btn_shoot.UseVisualStyleBackColor = false;
+            this.btn_shoot.Click += new System.EventHandler(this.Btn_shoot_Click);
             // 
             // btn_shootaway
             // 
@@ -76,10 +79,11 @@
             this.btn_shootaway.TabIndex = 3;
             this.btn_shootaway.Text = "shootaway";
             this.btn_shootaway.UseVisualStyleBackColor = false;
+            this.btn_shootaway.Click += new System.EventHandler(this.Btn_shootaway_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Russian_roulette.Properties.Resources.bann;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(528, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(211, 177);
@@ -91,7 +95,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Russian_roulette.Properties.Resources.goli222;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_shootaway);
@@ -100,6 +103,7 @@
             this.Controls.Add(this.btn_load);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

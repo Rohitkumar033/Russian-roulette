@@ -73,9 +73,9 @@ namespace Russian_roulette.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bult {
+        internal static System.Drawing.Bitmap boot {
             get {
-                object obj = ResourceManager.GetObject("bult", resourceCulture);
+                object obj = ResourceManager.GetObject("boot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,19 @@ namespace Russian_roulette.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap goli {
+        internal static System.Drawing.Bitmap boot1 {
             get {
-                object obj = ResourceManager.GetObject("goli", resourceCulture);
+                object obj = ResourceManager.GetObject("boot1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap brkn {
+            get {
+                object obj = ResourceManager.GetObject("brkn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,39 +113,9 @@ namespace Russian_roulette.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap goli2 {
-            get {
-                object obj = ResourceManager.GetObject("goli2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap goli222 {
             get {
                 object obj = ResourceManager.GetObject("goli222", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap gun {
-            get {
-                object obj = ResourceManager.GetObject("gun", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images {
-            get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
