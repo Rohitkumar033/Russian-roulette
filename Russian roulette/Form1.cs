@@ -57,9 +57,17 @@ namespace Russian_roulette
             btn_shoot.Enabled = true;
             btn_shootaway.Enabled = true;
 
-            //coding for sound//
+            //coding for spin sound//
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.loads);
             snd.Play();
+            //coding for spin image//
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+            Stream mystream = myAssembly.GetManifestResourceStream("Russian_roulette.Resources.sping.gif");
+            Bitmap bmp = new Bitmap(mystream);
+
+            //var bmp = new Bitmap(Russian_roulette.properties.Resources.sping);
+            pictureBox.Image = bmp;
+            // Image.FromFile(Russian_roulette.Resources.sping);
 
         }
         private void Btn_shoot_Click(object sender, EventArgs e)
@@ -69,6 +77,18 @@ namespace Russian_roulette
             btn_spin.Enabled = false;
             btn_shoot.Enabled = true;
             btn_shootaway.Enabled = true;
+            //coding for shoot sound//
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.shhots);
+            snd.Play();
+            //coding for spin image//
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+            Stream mystream = myAssembly.GetManifestResourceStream("Russian_roulette.Resources.shoot.gif");
+            Bitmap bmp = new Bitmap(mystream);
+
+            //var bmp = new Bitmap(Russian_roulette.properties.Resources.shoot);
+            pictureBox.Image = bmp;
+            // Image.FromFile(Russian_roulette.Resources.shoot);
+
         }
 
         private void Btn_shootaway_Click(object sender, EventArgs e)
@@ -87,7 +107,12 @@ namespace Russian_roulette
 
         private void Btn_playagain_Click(object sender, EventArgs e)
         {
-
+            this.Controls.Clear();
+            this.InitializeComponent();
+            btn_load.Enabled = true;
+            btn_spin.Enabled = false;
+            btn_shoot.Enabled = false;
+            btn_shootaway.Enabled = false;
         }
     }
 
