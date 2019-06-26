@@ -9,4 +9,5 @@ namespace Russian_roulette.Properties
     class RRgun
     {
     }
+   
 }

@@ -22,16 +22,27 @@ namespace Russian_roulette
 
         private void Btn_load_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.boot);
+            //coding for sound//
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.loads);
             snd.Play();
-                 //blow coding for load button//
-                btn_load.Enabled = false; // Disabling Load button
-                btn_spin.Enabled = true;
-                btn_shoot.Enabled = false;
-                btn_shootaway.Enabled = false;
+            //blow coding for load button//
+            btn_load.Enabled = false; 
+            btn_spin.Enabled = true;
+            btn_shoot.Enabled = false;
+            btn_shootaway.Enabled = false;
+            //codind for image//
+             Assembly myAssembly = Assembly.GetExecutingAssembly();
+             Stream mystream = myAssembly.GetManifestResourceStream("Russian_roulette.Resources.load.gif");
+             Bitmap bmp = new Bitmap(mystream);
 
+            //var bmp = new Bitmap(Russian_roulette.properties.Resources.load);
+           pictureBox.Image = bmp;
+                // Image.FromFile(Russian_roulette.Resources.load);
             
+
         }
+
+
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
@@ -45,8 +56,12 @@ namespace Russian_roulette
             btn_spin.Enabled = false;
             btn_shoot.Enabled = true;
             btn_shootaway.Enabled = true;
-        }
 
+            //coding for sound//
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.loads);
+            snd.Play();
+
+        }
         private void Btn_shoot_Click(object sender, EventArgs e)
         {
             //Calling Shoot function from Game Class
@@ -69,5 +84,15 @@ namespace Russian_roulette
         {
 
         }
+
+        private void Btn_playagain_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    internal class properties
+    {
+        internal static object resources;
     }
 }
