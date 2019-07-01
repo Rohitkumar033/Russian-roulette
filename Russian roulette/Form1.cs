@@ -58,7 +58,7 @@ namespace Russian_roulette
             btn_shootaway.Enabled = true;
 
             //coding for spin sound//
-            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.loads);
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.spin);
             snd.Play();
             //coding for spin image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
