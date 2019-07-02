@@ -80,7 +80,7 @@ namespace Russian_roulette
             //coding for shoot sound//
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.shhots);
             snd.Play();
-            //coding for spin image//
+            //coding for shoot image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream mystream = myAssembly.GetManifestResourceStream("Russian_roulette.Resources.shoot.gif");
             Bitmap bmp = new Bitmap(mystream);
@@ -98,6 +98,17 @@ namespace Russian_roulette
             btn_spin.Enabled = false;
             btn_shoot.Enabled = true;
             btn_shootaway.Enabled = true;
+            //coding for shoot away  sound//
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_roulette.Properties.Resources.shootsd);
+            snd.Play();
+            //coding for shoot away image//
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+            Stream mystream = myAssembly.GetManifestResourceStream("Russian_roulette.Resources.shtaw.gif");
+            Bitmap bmp = new Bitmap(mystream);
+
+            //var bmp = new Bitmap(Russian_roulette.properties.Resources.shoot);
+            pictureBox.Image = bmp;
+            // Image.FromFile(Russian_roulette.Resources.shoot);
         }
 
         private void Form1_Load(object sender, EventArgs e)

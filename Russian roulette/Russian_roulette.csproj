@@ -117,5 +117,11 @@
   <ItemGroup>
     <None Include="Resources\shhots.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\shtaw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shootsd.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
