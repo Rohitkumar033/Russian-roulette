@@ -35,7 +35,9 @@
             this.btn_shootaway = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.btn_playagain = new System.Windows.Forms.Button();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_load
@@ -95,7 +97,7 @@
             this.pictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.BackgroundImage")));
             this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox.Location = new System.Drawing.Point(456, 103);
+            this.pictureBox.Location = new System.Drawing.Point(59, -393);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(457, 266);
@@ -117,12 +119,26 @@
             this.btn_playagain.UseVisualStyleBackColor = false;
             this.btn_playagain.Click += new System.EventHandler(this.Btn_playagain_Click);
             // 
+            // pbImage
+            // 
+            this.pbImage.BackColor = System.Drawing.Color.Transparent;
+            this.pbImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbImage.BackgroundImage")));
+            this.pbImage.Location = new System.Drawing.Point(344, 104);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(393, 267);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImage.TabIndex = 6;
+            this.pbImage.TabStop = false;
+            this.pbImage.Click += new System.EventHandler(this.PbImage_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pbImage);
             this.Controls.Add(this.btn_playagain);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.btn_shootaway);
@@ -134,6 +150,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -146,6 +163,7 @@
         private System.Windows.Forms.Button btn_shootaway;
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button btn_playagain;
+        private System.Windows.Forms.PictureBox pbImage;
     }
 }
 
